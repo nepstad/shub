@@ -1,0 +1,19 @@
+$def with(title, upload_form)
+
+<HTML>
+<HEAD>
+<TITLE>$title</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<FORM action="", enctype="multipart/form-data" method="post">
+$if not upload_form.valid: <p class="error">Invalid input:</p>
+$:upload_form.render()<P>
+Specify an archive:<BR/>
+<INPUT TYPE="file" name="simarchive" size="40">
+</P>
+<DIV>
+<input type="submit" />    </form>
+</DIV>
+</BODY>
+</HTML>
