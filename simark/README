@@ -1,0 +1,7 @@
+Simple web interface for a simulation files archive
+
+Required Python modules
+-----------------------
+ * web.py
+ * python-git
+ * lepl
